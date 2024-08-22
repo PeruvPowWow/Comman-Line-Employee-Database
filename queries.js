@@ -1,11 +1,12 @@
 const pool = require('./db');
 
 const getAllDepartments = async () => {
-try {
+    try {
     const result = await pool.query('SELECT * FROM department');
     return result.rows;
 } catch (err) {
     console.error('Error fetching departments:', err);
+}
 };
 
 const getAllRoles = async () => {
@@ -28,4 +29,10 @@ const getAllEmployees = async () => {
 
 module.exports = {
     getAllDepartments,
+    getAllRoles,
+    getAllEmployees,
+    addDepartment,
+    addRole,
+    addEmployee,
+    updatedEmployeeRole
 };
