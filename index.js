@@ -17,3 +17,17 @@ const mainMenu = async () => {
             'Quit',
         ]
     });
+
+    switch (answer.action) {
+        case 'View all departments':
+            const departments = await queries.getAllDepartments();
+            console.table(departments);
+            break;
+
+            case 'Exit':
+            process.exit();
+    }
+    mainMenu();
+};
+
+mainMenu();
