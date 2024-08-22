@@ -1,3 +1,4 @@
+const inquirer = require('inquirer');
 const pool = require('./db');
 
 const getAllDepartments = async () => {
