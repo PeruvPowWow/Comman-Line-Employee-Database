@@ -23,6 +23,19 @@ const mainMenu = async () => {
             const departments = await queries.getAllDepartments();
             console.table(departments);
             break;
+        
+        case 'View all roles':
+            const roles = await queries.getAllRoles();
+            console.table(roles);
+            break;
+
+        case 'View all employees':
+            const employees = await queries.getAllEmployees();
+            console.table(employees);
+            break;
+        
+        case 'Add a department':
+            
 
             case 'Exit':
             process.exit();
