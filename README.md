@@ -57,7 +57,7 @@ node index.js
 3. Follow the prompts in the CLI to manage departments, roles, and employees.
 
 ## How-to Video
-
+https://drive.google.com/file/d/1qkF-mjT5GNp6Ozxctmtbfp6JYPk67aFP/view?usp=sharing
 
 ## Technologies Used
 
