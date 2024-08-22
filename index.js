@@ -35,11 +35,29 @@ const mainMenu = async () => {
             break;
         
         case 'Add a department':
-            
+            await queries.addDepartment();
+            break;
 
-            case 'Exit':
+        case 'Add a role':
+            await queries.addRole();
+            break;
+        
+        case 'Add an employee':
+            await queries.addEmployee();
+            break;
+        
+        case 'Update an employee role':
+            await queries.updateEmployeeRole();
+            break;
+        
+        case 'Quit':
             process.exit();
+            break;
+
+        default:
+            console.log('Invalid option selected');
     }
+
     mainMenu();
 };
 
